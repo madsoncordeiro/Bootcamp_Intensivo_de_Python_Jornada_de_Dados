@@ -6,4 +6,4 @@ try:
 
     print(f"A soma entre {numero1} e {numero2} é igual a {round(numero1 + numero2, 2)}. ")
 except ValueError:
-    print("Digite somente um número inteiro formado por algarismos. Não é possível utilizar o número por extenso. ")
+    print("Digite somente um número formado por algarismos. Não é possível utilizar o número por extenso. ")
