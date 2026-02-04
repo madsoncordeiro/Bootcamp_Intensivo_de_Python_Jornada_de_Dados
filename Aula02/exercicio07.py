@@ -8,4 +8,4 @@ try:
 
     print(f"A média entre os números {numero1} e {numero2} é igual a {round(media, 2)}. ")
 except ValueError:
-    print("Digite somente um número inteiro formado por algarismos. Não é possível utilizar o número por extenso. ")
+    print("Digite somente um número formado por algarismos. Não é possível utilizar o número por extenso. ")
