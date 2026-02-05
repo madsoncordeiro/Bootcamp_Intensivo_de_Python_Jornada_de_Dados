@@ -8,6 +8,12 @@ Refatorar o projeto da aula anterior evitado bugs.
 
 try:
     nome_usuario = input("Digite o seu nome: ")
+    if nome_usuario.isdigit():
+        raise ValueError("Você digitou um número no lugar do nome. Isso não é permitido. ")
+    elif len(nome_usuario) == 0:
+        raise ValueError("Você não digitou o seu nome e deixou o campo vazio. Isso não é permitido. ")
+    elif nome_usuario.isspace():
+        raise ValueError("Você digitou apenas espaço em branco no lugar do seu nome. Isso não é permitido. ")
     salario_usuario = float(input("Digite o seu salário: "))
     porcentagem_bonus_usuario = float(input("Digite a porcentagem do bônus que você recebeu (digite somente o número): "))
     
@@ -17,5 +23,6 @@ try:
     else:
         print("Você digitou um número negativo para a porcentagem, para o bônus ou para ambos. ")
 
-except ValueError:
+except ValueError as falha:
+    print(falha)
     print("Digite corretamente os valores quando for solicitado (número no lugar de número e nome no lugar de nome). ")
