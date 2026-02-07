@@ -15,13 +15,13 @@ try:
     elif nome_usuario.isspace():
         raise ValueError("Você digitou apenas espaço em branco no lugar do seu nome. Isso não é permitido. ")
     salario_usuario = float(input("Digite o seu salário: "))
-    porcentagem_bonus_usuario = float(input("Digite a porcentagem do bônus que você recebeu (digite somente o número): "))
+    bonus_usuario = float(input("Digite a valor do bônus que você recebeu (digite somente o número): "))
     
-    if salario_usuario >= 0 and porcentagem_bonus_usuario >= 0:
-        kpi_bonus = 1000 + (salario_usuario * porcentagem_bonus_usuario)
+    if salario_usuario >= 0 and bonus_usuario >= 0:
+        kpi_bonus = 1000 + (salario_usuario * bonus_usuario)
         print(f"Olá, {nome_usuario}. O seu valor bônus foi de R${kpi_bonus}.")
     else:
-        print("Você digitou um número negativo para a porcentagem, para o bônus ou para ambos. ")
+        print("Você digitou um número negativo para o salário, para o bônus ou para ambos. ")
 
 except ValueError as falha:
     print(falha)
