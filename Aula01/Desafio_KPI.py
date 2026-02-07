@@ -6,8 +6,8 @@ Escreva um programa, em Python, que solicita ao usuário para que digite seu nom
 
 nome_usuario = input("Digite o seu nome: ")
 salario_usuario = float(input("Digite o seu salário: "))
-porcentagem_bonus_usuario = float(input("Digite a porcentagem do bônus que você recebeu: "))
+bonus_usuario = float(input("Digite o valor do bônus que você recebeu: "))
 
-kpi_bonus = 1000 + (salario_usuario * porcentagem_bonus_usuario)
+kpi_bonus = 1000 + (salario_usuario * bonus_usuario)
 
 print(f"Olá, {nome_usuario}. O seu valor bônus foi de R${kpi_bonus}.")
